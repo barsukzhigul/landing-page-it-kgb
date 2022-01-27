@@ -39,10 +39,12 @@ h2 {
   font-weight: 700;
   margin-block-start: 0;
 }
-ul{
+
+ul {
   margin: 0;
   padding: 0;
 }
+
 .container {
   @include min-max(320px, 100%, 0);
 }
