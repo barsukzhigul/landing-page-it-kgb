@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/**
+ * Основные стили
+ **/
+
+html {
+  box-sizing: border-box;
+  color: $white;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  background: linear-gradient(208.74deg, #4654C2 13.28%, #0C1DAE 28.13%, #000000 68.87%) no-repeat;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: $white;
+}
+
+h1 {
+  font-size: px-to-rem(40px);
+  font-weight: 700;
+  margin-block-start: 0;
+}
+
+h2 {
+  font-size: px-to-rem(25px);
+  font-weight: 700;
+  margin-block-start: 0;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+.container {
+  @include min-max(320px, 100%, 0);
+}
+
+.wrap {
+  @include min-max(320px, 1140px, 20px);
+}
+
+//@media (max-height: 740px), (max-width: 1024px) {
+//
+//	.fp-responsive {
+//
+//		.projects {
+//
+//			div.projects__wrap {
+//				height: auto !important;
+//			}
+//
+//		}
+//
+//		.header, .projects, .details, .list-of-works, .calculator, .contacts {
+//			height: auto !important;
+//		}
+//
+//	}
+//
+//
+//}
